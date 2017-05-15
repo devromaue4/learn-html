@@ -1,0 +1,33 @@
+body {
+  /*font-family: Georgia, serif;*/
+  /*font-family: Tahoma, serif;*/
+  font-family: Monaco, Courier, monospace;
+  /*margin: 19px;*/
+}
+
+h1 {
+  text-shadow: 2px 2px 0 #ccc;
+}
+
+h1,
+h2 {
+  color: #618ad2;
+}
+
+p {
+  color: green;
+}
+
+.grey {
+  color: #A9A9A9;
+}
+
+em {
+  border: 1px solid #E8E8EE;
+  border-radius: 4px;
+  padding: 1px 5px;
+  color: red;
+  background: #F7F7F9;
+  font-size: 15px;
+  font-style: normal;
+}

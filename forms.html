@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms</title>
+</head>
+<body>
+  <h1>Forms</h1>
+  <h2>First form</h2>
+  <form action="" method="get">
+    <label for="username-field">Enter your login <input type="text" name="login" id="username-field" value=""></label><br>
+    <label for="password-field">Enter your password <input type="password" name="password" id="password-field" value=""></label>
+    <input type="submit" name="" value="Enter">
+  </form>
+  <h2>Multipleline text field</h2>
+  <textarea name="" id="" cols="30" rows="5">Enter some text here...</textarea>
+  <h2>Checkbox</h2>
+  <input type="checkbox" name="" id="">
+  <input type="checkbox" checked name="" id="">
+  <h2>Radio button</h2>
+  <input type="radio" name="rad1" value="p">
+  <input type="radio" name="rad1" value="q" checked>
+  <h2>Select</h2>
+  <select name="choose-theme" id="">
+    <option value="light">Light theme</option>
+    <option value="dark">Dark theme</option>
+  </select>
+  <h2>Multiselect</h2>
+  <select name="days[]" id="" multiple size="7">
+    <option value="">ithem 1</option>
+    <option value="" selected>ithem 2</option>
+  </select>
+  <h2>Upload files</h2>
+  <form action="" enctype="multipart/form-data">
+    <input type="file"  name="">
+  </form>
+  <h2>Hidden field</h2>
+  <input type="hidden" name="hid-field" value="20">
+</body>
+</html>
