@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/selectors.css">
+  <title>Selectors</title>
+</head>
+<body>
+  <h1>Selectors</h1>
+  <h2>Context selectors and Pseudo-classes :<br> first-child, :last-child, :nt-child</h2>
+  <h3>List without class</h3>
+  <ul>
+    <li>Ithem</li>
+    <li>Ithem</li>
+    <li>Ithem</li>
+    <li>Ithem</li>
+  </ul>
+  <h3>List with class</h3>
+  <ul class="target">
+    <li>Ithem</li>
+    <li>Ithem</li>
+    <li>Ithem</li>
+    <li>Ithem</li>
+    <li>Ithem</li>
+    <li>Ithem</li>
+    <li>Ithem</li>
+  </ul>
+  <h3>List with class</h3>
+  <ul class="target">
+    <li>Ithem</li>
+    <li>Ithem</li>
+    <li>Ithem</li>
+    <li>Ithem</li>
+    <li>Ithem</li>
+    <li>Ithem</li>
+    <li>Ithem</li>
+  </ul>
+  <h2>Pseudo-class :hover</h2>
+  <h3>Table</h3>
+  <table>
+    <tr>
+      <th>N#</th>
+      <th>Sportman</th>
+      <th>Score</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Мартен Фуркад <em>Франция</em></td>
+      <td><strong>151</strong></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Эмиль-Хегле Свендсен  <em>Норвегия</em></td>
+      <td><strong>121</strong></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Алексис Бёф <em>Франция</em></td>
+      <td><strong>110</strong></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Арнд Пайффер <em>Германия</em></td>
+      <td><strong>105</strong></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Евгений Устюгов <em>Россия</em></td>
+      <td><strong>104</strong></td>
+    </tr>
+  </table>
+  <h2>Pseudo-classes :link, :visited, :active.</h2>
+  <ul>
+    <li>:link - выбирает ещё не посещённые ссылки</li>
+    <li>:visited - выбирает посещённые ссылки.</li>
+    <li>:active - выбирает активные ссылки (кнопка мыши зажата на ссылке).</li>
+  </ul>
+  <pre>
+    a:link { ... }
+    a:visited { ... }
+    a:hover { ... }
+    a:active { ... }
+  </pre>
+  <p>Обратите внимание на порядок правил. Если их расположить по-другому, то некоторые могут не сработать.</p>
+  <h3>Псевдоклассы для ссылок</h3>
+  <p><a href="file:///C:/Users/Poljakov/Desktop/GitHub/learn-html/selectors.html">Эта ссылка посещена</a>, так как ведёт на страницу с этим заданием.</p>
+  <p><a href="/never-visited">Эта ссылка ещё не посещена</a>, так как ведёт на несуществующую страницу.</p>
+  <p>Кстати, для ссылок очень часто задают стили при наведении с помощью :hover.</p>
+  <h2>Pseudo-class :focus</h2>
+  <form action="">
+    <label for="login">Login</label><br>
+    <input type="text" id="login" name="login" required><br>
+    <label for="password">Password</label><br>
+    <input type="password" id="password">
+    <input type="submit" name="password" value="Enter">
+  </form>
+  <h2>Испытание. Дуэль</h2>
+  <div class="shooter-1">
+    <ul class="target">
+      <li>
+        <div class="hitbox"></div>
+        <div class="lever"><span></span ></div>
+      </li>
+      <li class="miss">
+        <div class="hitbox"></div>
+        <div class="lever"><span></span></div>
+      </li>
+      <li class="miss">
+        <div class="hitbox"></div>
+        <div class="lever"><span></span></div>
+      </li>
+      <li>
+        <div class="hitbox"></div>
+        <div class="lever"><span></span></div>
+      </li>
+      <li class="miss">
+        <div class="hitbox"></div>
+        <div class="lever"><span></span></div>
+      </li>
+    </ul>
+  </div>
+  <div class="shooter-2">
+    <ul class="target">
+      <li>
+        <div class="hitbox"></div>
+        <div class="lever"><span></span></div>
+      </li>
+      <li>
+        <div class="hitbox"></div>
+        <div class="lever"><span></span></div>
+      </li>
+      <li>
+        <div class="hitbox"></div>
+        <div class="lever"><span></span></div>
+      </li>
+      <li>
+        <div class="hitbox"></div>
+        <div class="lever"><span></span></div>
+      </li>
+      <li>
+        <div class="hitbox"></div>
+        <div class="lever"><span></span></div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
