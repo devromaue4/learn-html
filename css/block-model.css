@@ -1,0 +1,68 @@
+p,
+div,
+h1,
+h2 {
+  outline: 1px dashed red;
+  font-family: Tahoma, sans-serif;
+  margin: 10px;
+  padding: 10px;
+  background: #2E93B4;
+  color: white;
+}
+
+strong,
+em,
+span {
+  outline: 1px dashed red;
+  color: white;
+  background: #97495A;
+}
+
+.p1 {
+  padding: 20px;
+}
+.p2 {
+  padding: 20px 30px 40px;
+}
+
+.m1 {
+  margin: 20px;
+}
+.m2 {
+  margin: 20px 30px 40px;
+}
+
+.b1, .b2, .b3, .out {
+  outline: none;
+  width: 280px;
+}
+
+.b1 {
+  border: 2px dashed yellow;
+}
+.b2 {
+  border: 2px dotted yellow;
+}
+.b3 {
+  border: 5px solid yellow;
+}
+
+.h2 {
+  background: none;
+  color: black;
+  outline: none;
+}
+
+.block {
+  width: 300px;
+}
+
+input[type="text"] {
+  width: 100%;
+  color: #666;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+

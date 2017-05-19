@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/block-model.css">
+  <title>Block model of Document</title>
+</head>
+<body>
+  <h1>Block model of document</h1>
+  <h1>Типы элементов</h1>
+  <div>
+    <h2>Блочные</h2>
+    <h2>Блочные</h2>
+  </div>
+  <p><em>Строчные элементы</em> <strong>не создают переносов</strong> <span>строки</span> до и после себя. Такие элементы располагаются в строке слева направо. Если <em>строчный элемент</em> <span>не помещается в родительский контейнер</span>, то он переносится на следующую строку.</p>
+  <h3>Padding</h3>
+   <div class="p1">Block 1</div>
+   <div class="p2">Block 2</div>
+   <div>
+     <span class="p1">Block 3</span>
+     <span class="p2">Block 4</span>
+   </div>
+   <h3>Margin</h3>
+   <div class="m1">Block 1</div>
+   <div class="m2">Block 2</div>
+   <div>
+     <span class="m1">Block 3</span>
+     <span class="m2">Block 4</span>
+   </div>
+   <h3>Border</h3>
+   <div class="b1"></div>
+   <div class="b2"></div>
+   <div class="b3"></div>
+   <div class="out">
+     <span class="b1">Border1</span>
+     <span class="b2">Border2</span>
+     <span class="b3">Border3</span>
+   </div>
+   <h2 class="h2">Стандартная блочная модель</h2>
+   <p>Стандартная блочная модель отвечает на основной вопрос: Сколько же в итоге места будет занимать элемент?</p>
+   <p>Ответ следующий: Область, занимаемая блочным элементом, складывается из его ширины и высоты содержания, внутренних и внешних отступов, ширины рамок .</p>
+   <p>Схема блочной модели:</p>
+   <img src="img/block_model.png" alt="">
+   <ul>
+     <li>ширина/высота содержания — свойства width и height (синий прямоугольник на схеме);</li>
+     <li>внутренние отступы — свойство padding;</li>
+     <li>рамки — свойство border;</li>
+     <li>внешние отступы — свойство margin.</li>
+   </ul>
+   <h2 class="h2">Изменяем блочную модель, свойство box-sizing</h2>
+   <p>Проблему с шириной тянущихся полей решить сложно. Идеальным вариантом было бы изменение алгоритма расчета ширины элемента, чтобы свойство width задавало не ширину содержания, а общую ширину.</p>
+   <p>К счастью, такая возможность была добавлена в CSS3 с помощью свойства box-sizing, которое уже поддерживается большинством современных браузеров.</p>
+   <p>Это свойство имеет два значения:</p>
+   <ol>
+     <li>content-box — значение по умолчанию, соответствует стандартной блочной модели.</li>
+     <li>border-box — изменяет режим расчета ширины элемента на описанный выше.</li>
+   </ol>
+   <form action="">
+     <div class="block"><input type="text" value="Фамилия"></div>
+     <div class="block"><input type="text" value="Имя"></div>
+     <div class="block"><input type="text" value="Отчество"></div>
+   </form>
+
+</body>
+</html>
