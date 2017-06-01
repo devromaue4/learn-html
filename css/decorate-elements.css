@@ -1,0 +1,341 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  /*font-size: 14px;*/
+}
+
+h1, h2, h3, p {
+  color: red;
+  text-align: center;
+}
+
+p {
+  color: black;
+}
+
+.share {
+  background: #ecf0f1;
+  width: 270px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.share b { 
+  color: #7f8c8d;
+  font-weight: normal;
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+
+.social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #bdc3c7;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-image: url(../img/social.png);
+}
+
+.social-vk {
+  background-color: #6d8fb3;
+  background-position: 0 0;
+}
+.social-fb {
+  background-color: #526da3;
+  background-position: -40px 0;
+}
+.social-tw {
+  background-color: #73bfe6;
+  background-position: -80px 0;
+}
+
+.paginator {
+  width: 280px;
+  background: #ecf0f1;
+  margin: 30px auto;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.paginator a,
+.paginator span {
+  display: inline-block;
+  height: 40px;
+  min-width: 20px;
+  padding: 0 10px;
+  background: #95a5a6;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.paginator .prev {
+  text-indent: -1000px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-image: url('../img/arrows.png');
+  background-position: 0 0;
+}
+.paginator .next {
+  text-indent: -1000px;
+  margin-left: 20px;
+  background-repeat: no-repeat;
+  background-image: url('../img/arrows.png');
+  background-position: 0 -40px;
+}
+
+.paginator .current {
+  background: #16a085;
+}
+.paginator .disabled {
+  opacity: 0.3;
+}
+.paginator a:hover {
+  background-color: #2ecc71;
+}
+
+
+/*///////////////////*/
+.card {
+    background: #1abc9c;
+    color: white;
+    width: 240px;
+    margin: 0 auto;
+}
+
+.card .title {
+    padding: 20px 20px 0;
+    font-size: 20px;
+}
+
+.card .description {
+    padding: 20px;
+}
+
+.card .share {
+    background: #1abc9c;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    padding: 5px 20px 17px;
+}
+
+.card .share .social {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #16a085;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-image: url('../img/social-challenge.png');
+}
+
+.card .share .social-fb {
+    background-position: 0 0;
+}
+.card .share .social-tw {
+    background-position: -30px 0;
+}
+.card .share .social-gl {
+    background-position: -60px 0;
+}
+
+.card .share .social-fb:hover {
+  background-color: #526da3;
+}
+.card .share .social-tw:hover {
+  background-color: #73bfe6;
+}
+.card .share .social-gl:hover {
+  background-color: #DB4437;
+}
+
+
+/*//////// contacts ///////*/
+.contacts {
+  margin: 0 auto;
+  width: 250px;
+}
+
+.contacts .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #7f8c8c;
+  margin-bottom: 20px;
+}
+
+.contacts .item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.contacts .icon {
+  /*outline: 2px solid rgba(0, 0, 0, 0.1);*/
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 22px;
+  height: 32px;
+  background-image: url('../img/contacts.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.contacts .icon-location {
+  background-position: 0 0;
+}
+.contacts .icon-phone {
+  background-position: -30px 0;
+}
+.contacts .icon-email {
+  background-position: -60px 0;
+}
+
+.contacts a {
+  color: #e2534b;
+}
+
+/*//////// comments //////////*/
+.comment {
+  font-family: "PT Sans", sans-serif;
+  color: #777;
+  position: relative;
+  /*margin-left: 50px;*/
+  /*margin-top: 90px;*/
+  /*margin-right: 20px;*/
+  width: 550px;
+  margin: 0 auto;
+}
+
+.comment-avatar {
+  width: 70px;
+  height: 70px;
+  background: #7f8c8c url('../img/avatar.png') no-repeat 50% 50%;
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+
+.comment-author {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-left: 45px;
+  padding-right: 20px;
+}
+
+.comment-text {
+  padding: 12px;
+  background-color: #f8f8f8;
+  border-bottom: 5px solid #e5e6e6;
+  padding-left: 45px;
+}
+
+.comment-date {
+  font-size: 12px;
+  color: #bdc3c7;
+  margin-top: 5px;
+}
+
+.comment-reply {
+  outline: 2px solid rgba(255, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url('../img/reply.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/*/////////////////*/
+.post {
+    width: 290px;
+    /*height: 20px;*/
+    position: relative;
+    background: #ecf0f1;
+    margin: 0 auto;
+}
+
+.post-stats .icon {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 4px;
+}
+
+.post .post-title {
+    color: #2980b9;
+    font-size: 20px;
+    padding-left: 75px;
+}
+
+.post .post-date {
+    position: absolute;
+    background: #ffffff;
+    padding: 18px 9px;
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 5px solid #bdc3c7;
+    top: 0;
+}
+
+.post .post-type {
+    position: absolute;
+    background: #7f8c8d;
+    padding: 20px 10px;
+    border-bottom: 5px solid #bdc3c7;
+    top: 70px;
+    width: 35px;
+    height: 15px;
+    background-image: url('../img/quotes.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.post .post-author {
+    padding: 5px 0 0 75px;
+}
+
+.post a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.post .post-stats {
+    display: inline-block;
+    padding-top: 1px;
+}
+
+.post .post-stats .icon-tags {
+    margin-left: 75px;
+    margin-right: 2px;
+    background-image: url('../img/post-challenge.png');
+}
+.post .post-stats .icon-comments {
+    margin-left: 10px;
+    background-image: url('../img/post-challenge.png');
+    background-position: 20px 0;
+}
+
+.post .post-stats div {
+    display: inline-block;
+}
+
+.post .post-text {
+    background: #ffffff;
+    border-bottom: 5px solid #bdc3c7;
+    padding: 10px 15px;
+    width: 165px;
+    margin-left: 75px;
+    color: #7f8c8d;
+    font-size: 11px;
+}

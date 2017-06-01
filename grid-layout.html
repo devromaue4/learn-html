@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/grid-layout.css">
+  <title>Grid-layout</title>
+</head>
+<body>
+  <h1>Control flow</h1>
+  <div class="header">header</div>
+  <div class="column1">column1</div>
+  <div class="column2">column2</div>
+  <div class="column3">column3</div>
+  <div class="footer">footer</div>
+  <h2>Floats</h2>
+  <div class="container">
+    <div class="block block1">.block1</div>
+    <p>Как и позиционирование, float используется для того, чтобы двигать боксы.</p>
+    <div class="block block2">.block2</div>
+    <p>Но в отличие от позиционирования, которым можно двигать боксы практически произвольно, все, что может float — это сдвинуть элемент к одной из сторон потока, правой или левой.</p>
+    <p><img src="img/float-behavior.png" width="100" alt="">При этом сам бокс и следующие за ним в потоке приобретают интересное поведение: float'нутый бокс смещается по горизонтали и прилипает к одной из сторон родителя.</p>
+  </div>
+  <h2>Выпадание из родителя</h2>
+  <div class="float-tr">
+    <div class="tr-block1">block 1 First column</div>
+    <div class="tr-block2">block 2 Second column</div>
+  </div>
+  <div class="fix-float"></div>
+  <h2>Флоат рядом с флоатом</h2>
+  <div class="container-floats">
+    <h2>Флоат влево</h2>
+    <div class="block block1">block1</div>
+    <div class="block block2">block2</div>
+    <div class="block block3">block3</div>
+  </div>
+  <div class="container-floats">
+    <h2>Флоат вправо</h2>
+    <div class="block block4">block4</div>
+    <div class="block block5">block5</div>
+    <div class="block block6">block6</div>
+  </div>
+  <h2>Пазл на флоатах</h2>
+  <div class="puzzle">
+    <!--
+    Вставляйте дивы с классами
+    от block1 до block8 в определённом порядке-->
+    <div class="block5"></div>
+    <div class="block7"></div>
+    <div class="block3"></div>
+    <div class="block1"></div>
+    <div class="block6"></div>
+    <div class="block4"></div>
+    <div class="block8"></div>
+    <div class="block2"></div>
+  </div>
+  <h2>Свойство clear</h2>
+  <p>Свойство clear запрещает обтекание элемента другими элементами. Вот его значения:</p>
+  <ol>
+    <li>left — запрещено обтекание слева;</li>
+    <li>right — запрещено обтекание справа;</li>
+    <li>both — запрещено обтекание с обеих сторон;</li>
+    <li>none — обтекание разрешено.</li>
+  </ol>
+  <p>Если после флоатного элемента расположен элемент с запрещённым обтеканием, то последний опускается под флоатный.</p>
+  <p>Свойство clear учит блочные элементы «видеть» зафлоаченные.</p>
+  <h2>Борьба с выпаданием флоатов: распорки</h2>
+  <div class="float-tr">
+    <div class="tr-block1">block 1 First column</div>
+    <div class="tr-block2">block 2 Second column</div>
+    <div class="clearfix1"></div>
+  </div>
+  <h2>Борьба с выпаданием флоатов: псевдораспорки </h2>
+  <div class="float-tr clearfix">
+    <div class="tr-block1">block 1 First column</div>
+    <div class="tr-block2">block 2 Second column</div>
+  </div>
+  <h2>Простейшая сетка</h2>
+  <div class="wrapper">
+    <div class="header">Хедер</div>
+    <div class="content-container clearfix">
+      <div class="sidebar"><p>Для нужного нам эффекта мы дадим основному блоку левый margin, чтобы он ужался направо, а боковую панель заfloat'им.</p></div>
+      <div class="content"><p>У этого способа есть один очень серьезный недостаток. Обратите внимание, что в исходном HTML блок "sidebar" идет до блока "content" с основным содержимым. Не нужно думать, что так сделано случайно. Так сделано специально, потому что иначе этот самый способ с наложением колонки поверх margin'а не работал бы.</p></div>
+    </div>
+    <div class="footer">Футер</div>
+  </div>
+  <h2>Сетка посложнее</h2>
+  <div class="wrapper2">
+    <div class="header clearfix">
+      <div class="layout-column layout-column-1">
+        <div class="logo">
+          <img width="140" src="img/logo.png" alt="">
+          <p>Научитесь создавать современные веб-интерфейсы, оттачивайте своё мастерство, станьте настоящим профессионалом.</p>
+        </div>
+      </div>
+      <div class="layout-column layout-column-2">
+        <ul class="menu">
+          <li>Курсы</li>
+          <li>Интенсив</li>
+        </ul>
+      </div>
+    </div>
+    <div class="features clearfix">
+      <div class="layout-column">
+        <div class="feature">Вы научитесь создавать современные веб-интерфейсы, работать с живым кодом, использовать новейшие технологии.</div>
+      </div>
+      <div class="layout-column">
+        <div class="feature">Минимум скучной теории и максимум практических упражнений, решение реальных задач и настоящие испытания.</div>
+      </div>
+      <div class="layout-column">
+        <div class="feature">Интересные, наглядные и затягивающие курсы, интерактивные интерфейсы, достижения — всё для обучения с удовольствием.</div>
+      </div>
+    </div>
+    <div class="footer clearfix">
+      <div class="footer-logo"><img width="140" src="img/logo.png" alt=""></div>
+    </div>
+  </div>
+  <h2>Последняя сетка</h2>
+  <div class="wrapper3">
+    <div class="header">
+      <div class="layout-positioner">
+        <div class="layout-column layout-column-1">
+          <div class="logo">
+            <img width="140" src="img/logo.png">
+            <p>Научитесь создавать современные веб-интерфейсы, оттачивайте своё мастерство, станьте настоящим профессионалом.</p>
+          </div>
+        </div>
+        <div class="layout-column layout-column-2">
+          <ul class="menu">
+            <li>Курсы</li>
+            <li>Интенсив</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="features">
+      <div class="layout-positioner">
+        <div class="layout-column">
+          <div class="feature">
+            Вы научитесь создавать современные веб-интерфейсы, работать с живым кодом, использовать новейшие технологии.
+          </div>
+        </div>
+        <div class="layout-column">
+          <div class="feature">
+            Минимум скучной теории и максимум практических упражнений, решение реальных задач и настоящие испытания.
+          </div>
+        </div>
+        <div class="layout-column">
+          <div class="feature">
+            Интересные, наглядные и затягивающие курсы, интерактивные интерфейсы, достижения — всё для обучения с удовольствием.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="layout-positioner"><div class="footer-logo">
+      <img width="140" src="img/logo.png">
+      </div></div>
+    </div>
+  </div>
+</body>
+</html>

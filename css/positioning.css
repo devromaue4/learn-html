@@ -1,0 +1,203 @@
+body {
+  width: 90%;
+  margin: 0 auto;
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+  /*position: relative;*/
+}
+
+h1, h2 {
+  color: red;
+  text-align: center;
+}
+
+
+.block {
+  background: #3a78a1;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.block-relative {
+  background: #3a78a1;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  top: -10px;
+  left: 10px;
+  /*height: 100px;*/
+  /*bottom: -10px;*/
+  /*right: -10px;*/
+}
+
+.block-shadow {
+  background: #ccc;
+}
+
+.frame {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #27ae60;
+  margin: 10px;
+}
+
+.frame img {
+  display: block;
+  border-radius: 5px;
+  position: relative;
+  top: -5px;
+  left: -5px;
+}
+
+.pblock {
+  width: 300px;
+  background: #3a78a1;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pblock-absolute {
+  margin-bottom: 20px;
+  /*width: 300px;*/
+  color: white;
+  background: rgba(255, 0, 0, 0.5);
+  padding: 10px;
+  position: absolute;
+}
+
+.inline-absolute {
+  color: white;
+  background: rgba(255, 0, 0, 0.5);
+  position: absolute;
+  width: 200px;
+  height: 100px;
+}
+
+.pblock-absolute2 {
+  margin-bottom: 20px;
+  color: white;
+  background: rgba(255, 0, 0, 0.5);
+  padding: 10px;
+  position: absolute;
+  /*left: 10px;*/
+  /*top: 10px;*/
+  right: 10px;
+  /*bottom: -50px;*/
+}
+
+.pa-block-1 {
+  color: white;
+  background: #3a78a1;
+  padding: 10px;
+  min-height: 100px;
+  position: relative;
+}
+
+.pa-block-2 {
+  min-height: 100px;
+  padding: 10px;
+  background: #27ae60;
+  position: relative;
+}
+
+.pa-block-absolute {
+  color: white;
+  background: #e74c3c;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  font-family: "Courier New", monospace;
+  opacity: 0.8;
+}
+
+.achievement {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 200px;
+  min-height: 50px;
+  margin-bottom: 50px;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  position: relative;
+  padding-left: 80px;
+}
+
+.badge {
+  width: 44px;
+  height: 44px;
+  border: 3px solid #e5e5e5;
+  border-radius: 4px;
+  background-color: #7fc3e5;
+  background-image: url('../img/medal.png');
+  position: absolute;
+  left: 20px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.description {
+  font-size: 12px;
+  color: #666;
+}
+
+.pbf-block {
+  color: white;
+  background: #3a78a1;
+  padding: 10px;
+  margin-bottom: 20px;
+  min-height: 200px;
+}
+
+.pbf-block-fixed {
+  color: white;
+  background: rgba(255, 0, 0, 0.5);
+  padding: 10px;
+  margin-bottom: 20px;
+  position: fixed;
+  left: 10px;
+  /*bottom: 10px;*/
+  top: 10px;
+}
+
+.z-block {
+  padding: 10px;
+  text-align: right;
+  color: white;
+  opacity: 0.8;
+  position: relative;
+}
+
+.z-block1 {
+  background: #3a78a1;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  z-index: 200;
+}
+
+.z-block2 {
+  width: 250px;
+  height: 250px;
+  background: #e74c3c;
+  position: absolute;
+  /*top: 20px;*/
+  z-index: 100;
+}
+
+.z-block3 {
+  width: 150px;
+  height: 150px;
+  background: #27ae60;
+  position: absolute;
+  /*top: 20px;*/
+}

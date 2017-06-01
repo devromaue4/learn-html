@@ -1,0 +1,269 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+h1, h2 {
+  color: red;
+}
+
+.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 180px;
+}
+
+.main-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu a {
+  color: #0088cc;
+  display: block;
+  padding: 8px 14px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: -1px;
+  text-decoration: none;
+}
+
+.main-menu a:hover {
+  background: #f5f5f5;
+}
+
+.main-menu .active a {
+  color: white;
+  background: #0088cc;
+}
+
+/*////////////// multi level menu /////////////////*/
+.main-menu-ml {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 180px;
+}
+
+.main-menu-ml li {
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu-ml > li {
+  border: 1px solid #e5e5e5;
+  margin-bottom: -1px;
+}
+
+.main-menu-ml a {
+  color: #0088cc;
+  display: block;
+  padding: 8px 14px;
+  text-decoration: none;
+}
+
+.main-menu-ml a:hover {
+  background: #f5f5f5;
+}
+
+.main-menu-ml > .active > a {
+  color: white;
+  background: #0088cc;
+}
+
+.main-menu-ml ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 5px 0 5px 30px;
+}
+
+.main-menu-ml li li a {
+  color: black;
+  padding: 3px 0;
+}
+
+.main-menu-ml li li a:hover {
+  background: none;
+  text-decoration: underline;
+}
+
+.main-menu-h {
+  border: 1px solid #e5e5e5;
+  /*background: #f5f5f5;*/
+  background: none;
+  margin: 0;
+  /*padding: 10px 15px;*/
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu-h li {
+  /*display: inline;*/
+  /*margin-right: 5px;*/
+  white-space: nowrap;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+.main-menu-h a {
+  color: #0088cc;
+  display: block;
+  padding: 8px 10px;
+  background-color: #f5f5f5;
+  border-left: 1px solid #e5e5e5;
+  margin-left: -1px;
+}
+
+.main-menu-h a:hover {
+  background: #eeeeee;
+}
+
+.main-menu-pop {
+  width: 180px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu-pop a {
+  border: 1px solid #e5e5e5;
+  display: block;
+  padding: 8px 14px;
+  margin-bottom: -1px;
+  text-decoration: none;
+  color: #0088cc;
+}
+
+.main-menu-pop a:hover {
+  background: #f5f5f5;
+}
+
+.main-menu-pop li {
+  position: relative;
+}
+
+.main-menu-pop .sub-menu {
+  list-style: none;
+  background: #fcf8e3;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 5px;
+  left: 170px;
+  z-index: 10;
+  width: 150px;
+  display: none;
+}
+
+.main-menu-pop > li:hover .sub-menu {
+  display: block;
+}
+
+
+/*/////// horisovtal menu ///////*/
+.main-menu-hp {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #e5e5e5;
+}
+
+.main-menu-hp > li {
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+}
+
+.main-menu-hp a {
+  /*text-decoration: none;*/
+  display: block;
+  padding: 8px 10px;
+  color: #0088cc;
+  margin-left: -1px;
+  border-left: 1px solid #e5e5e5;
+}
+
+.main-menu-hp a:hover {
+  background: #f5f5f5;
+}
+
+.main-menu-hp .sub-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #fcf8e3;
+  position: absolute;
+  width: 150px;
+  left: 1px;
+  display: none;
+}
+
+.main-menu-hp .sub-menu a {
+  border: 1px solid #e5e5e5;
+  margin-bottom: -1px;
+}
+
+.main-menu-hp > li:hover .sub-menu {
+  display: block;
+}
+
+.main-menu-hp .opened .sub-menu {
+  display: block;
+}
+
+.main-menu-hp > .opened > a {
+  color: white;
+  background: #0088cc;
+}
+
+
+/*/////////// challenge //////////////*/
+.main-menu-challenge {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 200px;
+}
+
+.main-menu-challenge li {
+    position: relative;
+}
+
+.main-menu-challenge a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 15px;
+    background: #2980b9;
+    border-bottom: 2px solid #2c3e50;
+}
+
+.main-menu-challenge .sub-menu {
+    width: 200px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    left: 180px;
+    top: 0px;
+    z-index: 10;
+}
+
+.main-menu-challenge .sub-menu a {
+    background: #1abc9c;
+    border-bottom: 2px solid #2ecc71;
+}
+
+.main-menu-challenge > li:hover .sub-menu {
+    display: block;
+}
+
+.main-menu-challenge .opened .sub-menu {
+    display: block;
+}
+
+.main-menu-challenge > .opened > a {
+    background: #1abc9c;
+}

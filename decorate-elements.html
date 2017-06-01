@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/decorate-elements.css">
+  <title>decorate</title>
+</head>
+<body>
+  <h1>Декоративные элементы</h1>
+  <h2>Социальные кнопки</h2>
+  <div class="share">
+    <b>Соцсети</b>
+    <a class="social social-vk" href=""></a>
+    <a class="social social-fb" href=""></a>
+    <a class="social social-tw" href=""></a>
+  </div>
+  <h2>Переключатель страниц</h2>
+  <div class="paginator">
+    <a class="prev disabled" href="">Назад</a>
+    <a class="current" href="">1</a>
+    <span>&hellip;</span>
+    <a href="">3</a>
+    <a class="next" href="">Вперёд</a>
+  </div>
+  <h3>Тестирование в разных состояниях</h3>
+  <p>Текущая страница первого переключателя — 1.</p>
+  <div class="paginator">
+    <a class="prev disabled" href="">Назад</a>
+    <a class="current" href="">1</a>
+    <span>&hellip;</span>
+    <a href="">100</a>
+    <a class="next" href="">Вперёд</a>
+  </div>
+  <p>Текущая страница второго переключателя — 53.</p>
+  <div class="paginator">
+    <a class="prev" href="">Назад</a>
+    <a class="current" href="">53</a>
+    <span>&hellip;</span>
+    <a href="">100</a>
+    <a class="next" href="">Вперёд</a>
+  </div>
+  <p>Текущая страница третьего переключателя — 100.</p>
+  <div class="paginator">
+    <a class="prev" href="">Назад</a>
+    <a href="">97</a>
+    <span>&hellip;</span>
+    <a class="current" href="">100</a>
+    <a class="next disabled" href="">Вперёд</a>
+  </div>
+  <h2>Испытание: карточка курса</h2>
+  <div class="card">
+    <div class="title">Курс &laquo;Фоны&raquo;</div>
+    <div class="description">
+      Учимся использовать фоновые цвета и изображения, разбираемся с форматами, знакомимся с приёмами создания декоративных эффектов.
+    </div>
+    <div class="share">
+      <a class="social social-fb" href=""></a>
+      <a class="social social-tw" href=""></a>
+      <a class="social social-gl" href=""></a>
+    </div>
+  </div>
+  <h2>Контакты</h2>
+  <p>В каждом из блоков .item есть пустой див .icon, в котором и будет отображаться иконка.</p>
+  <p>Специальные дивы использованы для наглядности. Лучше иконки выносить в фон псевдоэлементов ::before и ::after, чтобы не «засорять» разметку.</p>
+  <p></p>
+  <div class="contacts">
+    <div class="title">Наш адрес</div>
+    <div class="item">
+      <div class="icon icon-location"></div>
+      Россия, Санкт-Петербург,<br>
+                Невский пр., дом 1
+    </div>
+    <div class="item">
+      <div class="icon icon-phone"></div>
+      +7 (921) 555-33-22
+    </div>
+    <div class="item">
+      <div class="icon icon-email"></div>
+      <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    </div>
+  </div>
+  <h2>Комментарии</h2>
+  <div class="comment">
+    <div class="comment-avatar"></div>
+    <div class="comment-author">Дима Дивов</div>
+    <div class="comment-text">
+                Неплохой курс. Нравится собирать и применять теорию на практике.
+      <div class="comment-date">16.09.2013</div>
+    </div>
+    <a href="#reply" title="Ответить" class="comment-reply"></a>
+  </div>
+  <br><br>
+  <div class="comment">
+    <div class="comment-avatar"></div>
+    <div class="comment-author">Дима Дивов</div>
+    <div class="comment-text">
+                Неплохой курс. Нравится собирать и применять теорию на практике.
+      <div class="comment-date">16.09.2013</div>
+    </div>
+    <a href="#reply" title="Ответить" class="comment-reply"></a>
+  </div>
+  <h2>Испытание: анонс поста</h2>
+  <div class="post">
+    <div class="post-title">Интенсив: программа</div>
+    <div class="post-date">13.09</div>
+    <div class="post-type"></div>
+    <div class="post-author">
+      Автор: <a href="#">HTML Academy</a>
+    </div>
+    <div class="post-stats">
+      <div class="icon icon-tags"></div>
+      <a href="#">интенсив</a>,
+      <a href="#">программа</a>
+    </div>
+    <div class="post-stats">
+      <div class="icon icon-comments"></div>
+      <a href="#">5</a>
+    </div>
+    <div class="post-text">Работа над интенсивом идёт полным ходом. Мы нашли крутых людей в команду и решили еще кучу задач. Но сегодня я подробнее расскажу о работе над программой интенсива.</div>
+  </div>
+</body>
+</html>

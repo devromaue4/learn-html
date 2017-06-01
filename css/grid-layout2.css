@@ -1,0 +1,99 @@
+html,
+body {
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+body {
+    /*width: 450px;*/
+    /*height: 335px;*/
+    font-family: "Arial", sans-serif;
+    font-size: 10px;
+    color: white;
+}
+
+div {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.layout-positioner {
+    width: 350px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.top {
+    background: #34495e;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.header {
+    background: #c0392b;
+    min-height: 25px;
+}
+.menu {
+    background: #3498DB;
+    min-height: 25px;
+    padding-left: 15px;
+}
+
+.layout-promo {
+    margin: 0;
+    padding: 0;
+}
+.promo {
+    background: #c0392b;
+    min-height: 50px;
+    float: left;
+    margin-right: 10px;
+    width: 160px;
+}
+.promo:last-child {
+    margin-right: 0;
+}
+
+.features {
+    padding: 0;
+    margin: 0;
+}
+
+.features .feature {
+    background: #3498DB;
+    float: left;
+    margin-right: 10px;
+    min-height: 100px;
+    width: 60px;
+}
+.features .feature:nth-child(2){
+    width: 180px;
+}
+.features .feature:last-child {
+    margin-right: 0;
+}
+
+.footer {
+    background: #34495e;
+    min-height: 30px;
+    padding-left: 15px;
+}
+
+
+/*
+    Используемые цвета:
+    #34495e – мокрый асфальт
+    #c0392b – красный
+    #3498DB – синий
+*/

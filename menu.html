@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/menu.css">
+  <title>menu</title>
+</head>
+<body>
+  <h1>Создаём меню</h1>
+  <h2>Создаём вертикальное меню</h2>
+  <ul class="main-menu">
+    <li><a href="#company">О компании</a></li>
+    <li class="active"><a href="#services">Услуги</a></li>
+    <li><a href="#team">Сотрудники</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+  </ul>
+  <h2>Многоуровневое вертикальное меню</h2>
+  <ul class="main-menu-ml">
+    <li><a href="#company">О компании</a></li>
+    <li class="active"><a href="#services">Услуги</a>
+      <ul>
+        <li><a href="#develop">Разработка</a></li>
+        <li><a href="#promote">Продвижение</a></li>
+        <li><a href="#context">Контекст</a>
+          <ul>
+            <li><a href="#yandex">Яндекс</a></li>
+            <li><a href="#google">Google</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#team">Сотрудники</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+  </ul>
+  <h2>Горизонтальное меню</h2>
+  <ul class="main-menu-h">
+    <li><a href="#company">О компании</a></li>
+    <li><a href="#services">Услуги</a></li>
+    <li><a href="#team">Сотрудники</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+  </ul>
+  <h2>Вертикальное меню с выпадающим подменю </h2>
+  <ul class="main-menu-pop">
+    <li><a href="#company">О компании</a></li>
+    <li><a href="#services">Услуги</a>
+      <ul class="sub-menu">
+        <li><a href="#1">Разработка</a></li>
+        <li><a href="#2">Продвижение</a></li>
+        <li><a href="#3">Контекст</a></li>
+      </ul>
+    </li>
+    <li><a href="#team">Сотрудники</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+  </ul>
+  <h2>Горизонтальное меню с выпадающим подменю </h2>
+  <ul class="main-menu-hp">
+    <li><a href="#company">О компании</a></li>
+    <li><a href="#services">Услуги</a>
+      <ul class="sub-menu">
+        <li><a href="#1">Разработка</a></li>
+        <li><a href="#2">Продвижение</a></li>
+        <li><a href="#3">Контекст</a></li>
+      </ul>
+    </li>
+    <li><a href="#team">Сотрудники</a></li>
+  </ul>
+  <br><br><br><br><br><br>
+  <h2>Состояние «открытое подменю»</h2>
+  <ul class="main-menu-hp">
+    <li><a href="#company">О компании</a></li>
+    <li class="opened"><a href="#services">Услуги</a>
+      <ul class="sub-menu">
+        <li><a href="#1">Разработка</a></li>
+        <li><a href="#2">Продвижение</a></li>
+        <li><a href="#3">Контекст</a></li>
+      </ul>
+    </li>
+    <li><a href="#team">Сотрудники</a></li>
+  </ul>
+  <br><br><br><br><br><br>
+  <h2>Испытание: выпадающее меню</h2>
+  <ul class="main-menu-challenge">
+    <li><a href="/demos">Демонстрации</a></li>
+    <li class="opened">
+      <a href="/courses">Курсы</a>
+      <ul class="sub-menu">
+        <li><a href="/courses/4">Знакомство</a></li>
+        <li><a href="/courses/42">Селекторы</a></li>
+        <li><a href="/courses/45">Позиционирование</a></li>
+      </ul>
+    </li>
+    <li><a href="/public_profiles">Участники</a></li>
+    <li><a href="/achievments">Достижения</a></li>
+    <li><a href="/profile">Профиль</a></li>
+  </ul>
+</body>
+</html>
